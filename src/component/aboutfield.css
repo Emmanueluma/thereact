@@ -1,0 +1,56 @@
+section.about{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+section.about .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section.about .flex-container div.flex-item{
+    width: 50%;
+    height: 400px;
+}
+section.about .flex-container div.flex-item.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+section.about .flex-container div.flex-item.one a.btn{
+    color: #fff;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+section.about .flex-container div.flex-item.two{
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+section.about .flex-container div.flex-item.two img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1189px) {
+    section.about .flex-container{
+        flex-direction: column;
+    }
+    section.about .flex-container div.flex-item{
+        width: 90%;
+        height: 400px;
+    }
+    section.about .flex-container div.flex-item.one{
+        height: auto;
+    }
+    section.about .flex-container div.flex-item.two{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    }
+}
+@media screen and (max-width: 375px) {
+    section.about .flex-container div.flex-item{
+        width: 98%;
+    }
+}
